@@ -122,4 +122,4 @@ const fullName = `${pidmet} ${glogol} ${name}`
 console.log(fullName);
 
 let userName = prompt("Введіть своє ім'я: ");
-alert("Дякуємо, " + userName + "!. До сплати 1499 гривень! Ось моя карта (441 114 3317 5179)!");
+alert("Дякуємо, " + userName + "!. До сплати 20 гривень! Ось моя карта (4441 1144 3317 5179)!");
