@@ -106,20 +106,100 @@
 // // 2 це остача від ділен
 
 
-const result = 5 + 5 + '5';
-console.log(result);
+// const result = 5 + 5 + 'Оля 24 сентебря Тима 9 липня';
+// console.log(result);
 
-const email = 'cs.shad3096@gmail.com';
-console.log(email)
-console.log(email.length);
-const checkEmail = email.includes('@');
-console.log(checkEmail);
+// const email = 'cs.shad3096@gmail.com';
+// console.log(email)
+// console.log(email.length);
+// const checkEmail = email.includes('@');
+// console.log(checkEmail);
 
-const pidmet = 'I'
-const glogol = 'am'
-const name = 'Grut'
-const fullName = `${pidmet} ${glogol} ${name}`
-console.log(fullName);
+// const pidmet = 'I'
+// const glogol = 'am'
+// const name = 'Grut'
+// const fullName = `${pidmet} ${glogol} ${name}`
+// console.log(fullName);
 
-let userName = prompt("Введіть своє ім'я: ");
-alert("Дякуємо, " + userName + "!. До сплати 20 гривень! Ось моя карта (4441 1144 3317 5179)!");
+// let userName = prompt("Введіть своє ім'я: ");
+// alert("Дякуємо, " + userName + "!. До сплати 20 гривень! Ось моя карта (4441 1144 3317 5179)!");
+
+
+// dz 4
+
+const isSubscribe1 = prompt("mono")
+const isSubscribe2 = prompt("bank")
+const acces = isSubscribe1 === 'mono' && isSubscribe2 === 'bank';
+console.log(isSubscribe1)
+console.log(isSubscribe2)
+if (acces) {
+    alert("ok")
+} else {
+    alert("ne ok")
+}
+
+
+const nummber1 = prompt("больше 10 надо")
+const nummber2 = prompt("больше 10 надо")
+const acces1 = nummber1 > 10 && nummber2 > 10;
+console.log(nummber1)
+console.log(nummber2)
+if (acces1) {
+    alert("ok")
+} else {
+    alert("ne ok")
+}
+
+
+const isCards = prompt("I can do a trick with cards")
+const acces2 = isCards === 'cards';
+console.log(isCards)
+if (acces2) {
+    alert("gi")
+} else {
+    alert("ne gi")
+}
+
+
+const isBiger = prompt("10 <= x <= 20")
+const acces3 = isBiger >= 10 && isBiger <= 20;
+console.log(isBiger)
+if (acces3) {
+    alert("gi")
+} else {
+    alert("ne gi")
+}
+
+
+const isName = prompt('name');
+const isEmail = prompt('email');
+const isPassword = prompt('password');
+console.log(isName);
+
+
+if (isName.length > 3) {
+    alert('oka')
+
+} else {
+    alert('nouuu')
+}
+
+
+console.log(isEmail);
+if (isEmail === '@gmail.com' || isEmail === '@ukr.net' || isEmail === '@hotmail.com') {
+    alert('oka')
+
+} else {
+    alert('nouuu')
+}
+
+console.log(isPassword);
+if (isPassword.length > 6) {
+    alert('oka')
+
+} else {
+    alert('nouuu')
+}
+
+
+//пейте чаёёк
