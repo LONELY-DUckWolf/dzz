@@ -1,5 +1,5 @@
 let select = prompt("что вы желаете? шиншилу, трава, фрукты")
-let caseCoffee = select.toLocaleLowerCase()
+let caseCoffee = select
 
 switch (caseCoffee) {
     case "шиншилу":
@@ -23,7 +23,7 @@ switch (caseCoffee) {
 
 
 let day = prompt("день недели")
-let dayWitch = day.toLocaleLowerCase()
+let dayWitch = day
 
 switch (dayWitch) {
     case "вторник":
@@ -44,7 +44,7 @@ switch (dayWitch) {
 }
 
 let month = prompt("ведите любой год месяца")
-let monthWitch = month.toLocaleLowerCase()
+let monthWitch = month
 
 switch (month) {
     case "декабрь":
@@ -104,7 +104,7 @@ switch (number) {
 }
 
 let color = prompt("не скажешь красный либо зелёный я тебя по айпи вычислю ")
-let xz = color.toLocaleLowerCase()
+let xz = color
 
 switch (xz) {
     case "зелёный":
