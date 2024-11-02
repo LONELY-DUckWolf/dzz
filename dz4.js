@@ -42,6 +42,10 @@
 // }
 
 
+
+
+
+
 // const isName = prompt('name');
 // const isEmail = prompt('email');
 // const isPassword = prompt('password');
@@ -57,7 +61,7 @@
 
 
 // console.log(isEmail);
-// if (isEmail === '@gmail.com' || isEmail === '@ukr.net' || isEmail === '@hotmail.com') {
+// if (isEmail.includes('@gmail.com') || isEmail.includes('@hotmail.com') || isEmail.includes('@ukr.net')) {
 //     alert('oka')
 
 // } else {
@@ -71,3 +75,4 @@
 // } else {
 //     alert('nouuu')
 // }
+ 
