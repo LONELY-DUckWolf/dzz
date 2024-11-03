@@ -24,76 +24,55 @@
 
 
 // //3 
-// //nezn
+const obaaaaabuuuuu = 7;
+for (let i = 1; i <= 10; i++) {
+    let result = obaaaaabuuuuu * i;
+    console.log(`${obaaaaabuuuuu} x ${i} = ${result}`);
+  }
 
 
 // //4
 
-// let r = 1;
+let abu = [1, 2, 3, 4, 5];
+let o = 0;
+while (o < abu.length) {
+    console.log(abu[o])
+    o++;
+}
 
-// while (r <= 5) {
+//5
 
-//     console.log(r);
+let uba = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let p = 0; p < MessageChannel.length; p++) {
+    if (p === 7) {
+        break;
+    }
 
-//     r += 1;
-// }
+    console.log(uba[p])
+}
 
+//6
 
-// //5
+let k = 20;
+for (let i = 0; i < 30; i++) {
+    if (i === k) {
+        break;
+    }
 
+    console.log(i)
+}
 
-// for (let r = 1; r < 10; r += 1) {
+//7
 
-//     if (r === 7) {
-
-//         break;
-//     }
-//     console.log(r);
-// }
-
-// //6
-
-// let d = 30;
-
-// for (let h = 1; h < 40; h += 1) {
-    
-//     if (h === d) {
-        
-//         break;
-//     }
-
-//     console.log(h)
-// }
-
-
-
-// //7
-
-// let x = 1;
-
-// while (x <= 20) {
-
-
-
-//     console.log(x);
-
-//     x += 1;
-
-
-// }
-
-
-
-// for (let q = 1; q <= 20; q += 1 ) {
-    
-//     if (q % 3 === 0) {
-
-//         continue;
-//     }
-
-// console.log(q)
-// }
-
+let w = 1;
+while (w < 20) {
+    if (w % 3 === 0) {
+        w++;
+        continue;
+    }
+    console.log(w);
+    w++;
+}
 
 // // for (let meme = 2; meme < 20; meme - 2) {
 // // console.log(meme)

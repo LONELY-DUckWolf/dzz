@@ -21,10 +21,10 @@ noga += klava[i];
 console.log(klava[i]);
 }
 // Task 5
-const Tima = ["amiT", "мёртвыйбасеин", "Kaktus", "Andre", "Deadpool"];
-for (let i = 0; i < Tima.length; i++) {
-    if (Tima[i].length > 5) {
-     console.log(Tima[i]);
+const tima = ["amiT", "мёртвыйбасеин", "Kaktus", "Andre", "Deadpool"];
+for (let i = 0; i < tima.length; i++) {
+    if (tima[i].length > 5) {
+     console.log(tima[i]);
  }
 }
 // Task 6
@@ -37,9 +37,9 @@ for (let i = 1; i < srebmun.length; i++) {
 }
 console.log(max);
 // Task 7
-let нo = [5, 12, 8, 21, 3, 17, 9, 44, 6, 13];
-for (let i = 0; i < нo.length; i++) {
-  if (нo[i] % 2 === 0) {
-    console.log(нo[i]);
+let pppppo = [5, 12, 8, 21, 3, 17, 9, 44, 6, 13];
+for (let i = 0; i < pppppo.length; i++) {
+  if (pppppo[i] % 2 === 0) {
+    console.log(pppppo[i]);
   }
 }
