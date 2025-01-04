@@ -18,7 +18,7 @@ for (const key of Object.keys(user)) {
 
 function findBestEmployee(employees) {
     let maxTasks = 0;
-    let bestEmployee = null;
+    let bestEmployee = '';
 
     for (const [employee, tasks] of Object.entries(employees)) {
         if (tasks > maxTasks) {
@@ -31,11 +31,40 @@ function findBestEmployee(employees) {
 }
 
 const employees = {
-    rdd: 1111,
-    rfff: 2222,
-    wwwwww: 344
-}
+    biba: 854,
+    boba: 36436,
+    jojo: 7356976969,
+    dio: 344868976
+};
 
 console.log(findBestEmployee(employees));
 
 //3
+
+function getAllPropValues(arr, prop) {
+    const propValues = [];
+
+    for (const obj of arr) {
+        if (prop in obj) {
+            propValues.push(obj[prop]);
+        }
+    }
+
+    return propValues;
+}
+
+const products = [
+    { name: 'gg', price: 2535, quantity: 9 },
+    { name: 'rr', price: 235, quantity: 2 },
+    { name: 'tt', price: 25352, quantity: 1 },
+    { name: 'aa', price: 2435, quantity: 8 },
+];
+
+for (const { name: productName, price, quantity } of products) {
+    console.log(`prodct ${productName}, cost: ${price}, many: ${quantity}`);
+}
+
+console.log(getAllPropValues(products, 'name'));
+console.log(getAllPropValues(products, 'price'));
+console.log(getAllPropValues(products, 'quantity'));
+
