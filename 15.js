@@ -22,7 +22,7 @@ const players = [
     { name: 'player-5', fname: 'Chelsy', },
   ]
 
-  const friendsName = (players, fName) => {
+  const fnameName = (players, fName) => {
     return players.reduce((rap, { name, fname }) => {
       if (fname.includes(fName)) {
         rap.push(name);
@@ -31,17 +31,27 @@ const players = [
     }, []);
   };
 
-  console.log(friendsName(players, 'Mango'))
+  console.log(fnameName(players, 'Mango'))
 
 
 //3
-const playersFriends = (players, min, max) =>
-players.reduce((player) => player.friends >= min && player.friends <= max);
 
-const mins = 1;
-const maxs = 66;
+const rexs = [
+    { name: 'player-1', fname: ['arab', 'aziat'], },
+    { name: 'player-2', fname: ['arab' ], },
+    { name: 'player-3', fname: ['arab', 'water', 'riba'], },
+    { name: 'player-4', fname: ['arab', 'andertale'], },
+    { name: 'player-5', fname: ['arab', 'mugamammed'], },
+  ]
 
-console.log(playersFriends(players, mins, maxs));
+  
+  const rexContttt = rexs.reduce((rexCount, rex) => {
+    rexCount.push(rex.fname.length + " " + rex.name)
+    return rexCount
+  }, [])
+  const rexing = rexContttt.sort()
+
+  console.log(rexing);
 
 //4
 
