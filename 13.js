@@ -1,70 +1,70 @@
-//1
-const user = {
-    hobby: 'ff',
-    premium: true
-};
+// //1
+// const user = {
+//     hobby: 'ff',
+//     premium: true
+// };
 
-user.mood = 'sad';
-user.hobby = 'ff';
-user.premium = false;
+// user.mood = 'sad';
+// user.hobby = 'ff';
+// user.premium = false;
 
-const { hobby, premium, mood } = user;
+// const { hobby, premium, mood } = user;
 
-for (const key of Object.keys(user)) {
-    console.log(`${key}: ${user[key]}`);
-}
+// for (const key of Object.keys(user)) {
+//     console.log(`${key}: ${user[key]}`);
+// }
 
-//2
+// //2
 
-function findBestEmployee(employees) {
-    let maxTasks = 0;
-    let bestEmployee = '';
+// function findBestEmployee(employees) {
+//     let maxTasks = 0;
+//     let bestEmployee = '';
 
-    for (const [employee, tasks] of Object.entries(employees)) {
-        if (tasks > maxTasks) {
-            maxTasks = tasks;
-            bestEmployee = employee;
-        }
-    }
+//     for (const [employee, tasks] of Object.entries(employees)) {
+//         if (tasks > maxTasks) {
+//             maxTasks = tasks;
+//             bestEmployee = employee;
+//         }
+//     }
 
-    return  bestEmployee
-}
+//     return  bestEmployee
+// }
 
-const employees = {
-    biba: 854,
-    boba: 36436,
-    jojo: 7356976969,
-    dio: 344868976
-};
+// const employees = {
+//     biba: 854,
+//     boba: 36436,
+//     jojo: 7356976969,
+//     dio: 344868976
+// };
 
-console.log(findBestEmployee(employees));
+// console.log(findBestEmployee(employees));
 
-//3
+// //3
 
-function getAllPropValues(arr, prop) {
-    const propValues = [];
+// function getAllPropValues(arr, prop) {
+//     const propValues = [];
 
-    for (const obj of arr) {
-        if (prop in obj) {
-            propValues.push(obj[prop]);
-        }
-    }
+//     for (const obj of arr) {
+//         if (prop in obj) {
+//             propValues.push(obj[prop]);
+//         }
+//     }
 
-    return propValues;
-}
+//     return propValues;
+// }
 
-const products = [
-    { name: 'gg', price: 2535, quantity: 9 },
-    { name: 'rr', price: 235, quantity: 2 },
-    { name: 'tt', price: 25352, quantity: 1 },
-    { name: 'aa', price: 2435, quantity: 8 },
-];
+// const products = [
+//     { name: 'gg', price: 2535, quantity: 9 },
+//     { name: 'rr', price: 235, quantity: 2 },
+//     { name: 'tt', price: 25352, quantity: 1 },
+//     { name: 'aa', price: 2435, quantity: 8 },
+// ];
 
-for (const { name: productName, price, quantity } of products) {
-    console.log(`prodct ${productName}, cost: ${price}, many: ${quantity}`);
-}
+// for (const { name: productName, price, quantity } of products) {
+//     console.log(`prodct ${productName}, cost: ${price}, many: ${quantity}`);
+// }
 
-console.log(getAllPropValues(products, 'name'));
-console.log(getAllPropValues(products, 'price'));
-console.log(getAllPropValues(products, 'quantity'));
+// console.log(getAllPropValues(products, 'name'));
+// console.log(getAllPropValues(products, 'price'));
+// console.log(getAllPropValues(products, 'quantity'));
 
