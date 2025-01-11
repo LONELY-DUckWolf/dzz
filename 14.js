@@ -1,9 +1,9 @@
 const players = [
-    { name: 'Mango', colorEye: "white", age: 54, online: false, gender: "man", email: "mem@gmail.com"},
-    { name: 'Poly', colorEye: "blue", age: 92, online: true, gender: "cat", email: "mem@gmail.com" },
-    { name: 'Kiwi', colorEye: "yellow", age: 48, online: true, gender: "man", email: "mem@gmail.com" },
-    { name: 'Ajax', colorEye: "red", age: 71, online: false, gender: "cat", email: "mem@gmail.com" },
-    { name: 'Chelsy', colorEye: "black", age: 48, online: true, gender: "man", email: "mem@gmail.com" },
+    { name: 'Mango', colorEye: "white", age: 1, online: false, gender: "man", email: "mem@gmail.com"},
+    { name: 'Poly', colorEye: "blue", age: 9, online: true, gender: "cat", email: "mem@gmail.com" },
+    { name: 'Kiwi', colorEye: "yellow", age: 2, online: true, gender: "man", email: "mem@gmail.com" },
+    { name: 'Ajax', colorEye: "red", age: 3, online: false, gender: "cat", email: "mem@gmail.com" },
+    { name: 'Chelsy', colorEye: "black", age: 4, online: true, gender: "man", email: "mem@gmail.com" },
 ]
 //1
 const nameG = players.map((player) => player.name)
@@ -40,10 +40,10 @@ const playerSex = players.map((player) => {
     console.log(findEmail)
 
 //6
-    const playersAge = (players, min, max) =>
-    players.filter((player) => player.age >= min && player.age <= max);
-    
-    const min = 48;
-    const max = 92;
-    
-    console.log(playersAge(players, min, max));
+const filterAge = (players, min, max) =>
+players.filter((player) => player.age >= min && player.age <= max);
+
+const minw = 1;
+const maxw = 5;
+
+console.log(filterAge(players, minw, maxw));
